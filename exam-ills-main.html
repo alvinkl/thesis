@@ -26,7 +26,7 @@
             }
         }
         footer {
-            position: fixed;
+            position: absolute;
             bottom: 0;
             left: 0;
             width: 100%;
@@ -76,7 +76,7 @@
                     </div>
                     <div class="box-content">
                         <div class="valign-wrapper">
-                          <h5 class="valign"><img class="materialboxed" width="300" src="images/PSD Exam/exam 1.jpg" ></h5>
+                             <img class="materialboxed" width="300" src="images/PSD Exam/exam 1.jpg" >
                         </div>
                         <div class="divider vivid"></div>
                         <p>Although during its first decade Adobe developed Illustrator primarily for Macintosh, it sporadically supported other platforms. In the early 1990s, Adobe released versions of Illustrator for NeXT, Silicon Graphics, and Sun Solaris platforms, but they were discontinued due to poor market acceptance. The first version of Illustrator for Windows, version 2.0, was released in early 1989 and flopped.</p>
@@ -128,6 +128,7 @@
 
 </body>
 <script>
+
     $(document).ready(function() {
         $(".button-collapse ").sideNav();
         $('.collapsible').collapsible();
@@ -141,13 +142,15 @@
     $(document).ready(function() {
         $('select').material_select();
     });
-	 $(document).ready(function() {
-    Materialize.updateTextFields();
-  });
-  
-  $(document).ready(function(){
-    $('.materialboxed').materialbox();
-  });
+     $(document).ready(function() {
+        Materialize.updateTextFields();
+    });
+
+    $(document).ready(function(){
+        $('.materialboxed').materialbox();
+        $('.material-placeholder').width('100%');
+    });
+
 </script>
 
 </html>
